@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="FlexiCup: Multimodal Wireless Suction Cup with Active Sensing Using Diffusion Policies">
+  <meta name="keywords" content="FlexiCup, Multimodal Sensing, Suction Manipulation, Visuotactile Sensing, Learned Control">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlexiCup: Multimodal Wireless Suction Cup with Active Sensing Using Diffusion Policies</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    body {
+      zoom: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">FlexiCup: Multimodal Wireless Suction Cup with Active Sensing Using Diffusion Policies</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Anonymous Submission</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://FlexiCup.junhaogong.top"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://FlexiCup.junhaogong.top"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Hardware Link. -->
+              <span class="link-block">
+                <a href="https://FlexiCup.junhaogong.top"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-microchip"></i>
+                  </span>
+                  <span>Hardware</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Conventional suction cups lack sensing capabilities necessary for contact-aware manipulation in unstructured environments. This paper presents <strong>FlexiCup</strong>, a multimodal wireless suction cup, and develops an integrated sensing and learning framework that unifies vision and tactile sensing for learned manipulation.
+          </p>
+          <p>
+            The system uses illumination control to switch between visual and tactile modalities, enabling a single camera to provide both environmental vision and tactile perception. The system supports both vacuum and Bernoulli suction modes through modular mechanical configurations while maintaining complete wireless autonomy. Based on this suction cup, we propose a diffusion policy network with multihead attention mechanisms that processes multiscale observations from workspace and dual zone suction cameras, where the central zone provides switchable visuotactile sensing and the peripheral zone maintains continuous spatial awareness.
+          </p>
+          <p>
+            Experimental evaluation on inclined transport (73.3% success) and orange extraction (66.7% success) demonstrates contact-aware manipulation. Ablation studies reveal that central zone sensing is essential for contact detection while attention significantly enhances feature coordination. These results show that integrating multimodal sensing with learned control improves upon traditional threshold approaches.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Cover Image -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <img src="./static/images/image/FigCover.png" alt="FlexiCup Overview" style="width:100%;" />
+        <p style="margin-top: 20px;">
+          FlexiCup: An integrated multimodal wireless suction cup system for contact-aware manipulation. The system combines hardware innovations (Active Visuotactile Switching, Wireless Integrated Design, and Dual-Mode Suction Mechanisms) with a multimodal diffusion policy learning framework to enable contact-aware robotic manipulation through unified visuotactile perception and end-to-end control.
+        </p>
+      </div>
+    </div>
+    <!--/ Cover Image. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Key Contributions</h2>
+        <div class="content has-text-left">
+          <ol>
+            <li><strong>Wireless dual mode suction system</strong>: We develop a fully wireless suction cup supporting both vacuum and Bernoulli mechanisms through modular configurations, with integrated battery power and wireless communication achieving 60 Hz image streaming.</li>
+            <li><strong>Unified visuotactile sensing</strong>: A single 180° fisheye camera enables dynamic switching between environmental vision and precise tactile perception through illumination control, while maintaining peripheral vision for spatial context.</li>
+            <li><strong>Multimodal learning framework</strong>: We develop diffusion policies with multihead attention to integrate observations across workspace and dual zone suction cameras, handling dynamic modality transitions between vision and tactile sensing.</li>
+            <li><strong>Experimental validation</strong>: Evaluation on inclined transport (73.3% success) and orange extraction (66.7% success) demonstrates the hardware and algorithm integration, with ablation studies confirming critical component contributions.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">System Architecture</h2>
+        <img src="./static/images/image/FigStructure.png" alt="System Architecture" style="width:100%;" />
+        <p style="margin-top: 20px;">
+          System architecture and wireless integration. (a) Exploded view showing modular component integration including airways, optical system, electronics, and mechanical assembly. (b) Complete system wireless charging configuration. (c) Modular core components (PCB, battery, charging coil) extracted for standalone charging.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Functional Mechanisms</h2>
+        <img src="./static/images/image/FigFuction.png" alt="Functional Mechanisms" style="width:100%;" />
+        <p style="margin-top: 20px;">
+          FlexiCup functional mechanisms. (a) Cross-sectional comparison of vacuum (left) and Bernoulli (right) operation modes. (b) Vision and tactile modality switching with LED control. (c) Sealing configurations without and with PDMS membrane.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dual-Mode Demonstrations</h2>
+        <img src="./static/images/image/FigVacuumModes.png" alt="Dual-Mode Demonstrations" style="width:100%;" />
+        <p style="margin-top: 20px;">
+          FlexiCup operational demonstrations and modular design. (a) Four modular suction cup bottom configurations. (b) Vacuum mode orange extraction with visuotactile switching demonstration. (c) Bernoulli mode PCB manipulation with visuotactile switching demonstration.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Multimodal Performance</h2>
+        <img src="./static/images/image/FigVisual&TactileModalitiesPhotos.png" alt="Multimodal Performance" style="width:100%;" />
+        <p style="margin-top: 20px;">
+          Multi-modal performance characterization. (a) Vision and tactile sensing comparison across diverse objects showing environmental vision (top) and tactile mode (bottom) for five test objects. (b) Model performance comparison showing accuracy rates for vision-only, tactile-only, and multihead attention approaches. (c) Confusion matrix for multihead attention model demonstrating classification performance across all object categories.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Learning Framework</h2>
+        <img src="./static/images/image/FigFramework.png" alt="Learning Framework" style="width:100%;" />
+        <p style="margin-top: 20px;">
+          FlexiCup learning framework architecture. The system processes multimodal inputs through parallel encoders: workspace camera and dual suction camera views—peripheral view and central view—are encoded via ResNet-18, while system state is processed through an MLP. The peripheral and central features undergo multihead attention for interaction between views, then combined with workspace information. The integrated observation drives a diffusion policy that outputs robot pose, illumination control, and valve state for contact-aware manipulation.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experimental Setup</h2>
+        <img src="./static/images/image/FigExperimentSetup.png" alt="Experimental Setup" style="width:100%;" />
+        <p style="margin-top: 20px;">
+          Experimental setup showing FlexiCup mounted on UR3 robot with D435 external camera.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Task Demonstrations</h2>
+        <img src="./static/images/image/FigTaskRollouts.png" alt="Task Demonstrations" style="width:100%;" />
+        <p style="margin-top: 20px;">
+          Experimental task demonstrations showing inclined transport and orange extraction sequences with multimodal sensing integration.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Citation</h2>
+        <div class="content has-text-left">
+          <pre style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; text-align: left; overflow-x: auto;">@article{gong2025flexicup,
+  title={FlexiCup: Multimodal Wireless Suction Cup with Active Sensing Using Diffusion Policies},
+  author={Gong, Junhao and Li, Shoujie and Sou, Kit-Wa and Guo, Changqing and Wu, Tong and Xie, Yifan and Liang, Chenxin and Lyu, Chuqiao and Liang, Xiaojun and Ding, Wenbo},
+  journal={IEEE Robotics and Automation Letters},
+  year={2025}
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
